@@ -7,16 +7,38 @@
     <meta name="description" content="Huanlegou.GitHub.io : ">
 	<link rel="shortcut icon" href="images/slg.ico"/>
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 
+	<script type="text/javascript" src="javascripts/base.js"></script>
+	<script type="text/javascript" src="javascripts/scrollImg.js"></script>
     <title>The release of the soul</title>
+	<script type="text/javascript">
+	myAddEvent(window,'load',scrollImg);
+	function scrollImg(){
+
+		var aPicList=getByClass(document,'pic-list');
+		var i=0;
+		
+		function next(){
+			if(i<aPicList.length){
+				new ScrollImg(aPicList[i]);
+				timer=setTimeout(next, 1000);
+			}
+			i++;
+		}
+		
+		next();
+	}
+	</script>
   </head>
 
   <body>
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="inner">
+        <header class="inner">			<!-- 不管什么事，跟着自己的心走，肯定没错。 -->
           <a id="forkme_banner" href="#">No matter what, follow your heart, it must be right.</a>
+								<!-- 心灵的释放 -->
           <h1 id="project_title"> The release of the soul</h1></p>
         </header>
     </div>
@@ -138,12 +160,43 @@
 			<h3>
 			<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-			<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+			<p>人生若只如初见，何事秋风悲画扇。
+			
+			</p>
 
 			<h3>
-			<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+			<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>往昔的回忆</h3>
 
-			<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+			<p>
+				<div class="scrollbox">
+					<div class="pic-list">
+						<ul class="wrap">
+							<li class="picture"><img src="images/img/1.jpg" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/2.jpg" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/3.jpg" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/4.jpg" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/5.jpg" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/6.jpg" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/7.jpg" width="164" height="164" /></li>   
+							<li class="picture"><img src="images/img/8.jpg" width="164" height="164" /></li>  							
+						</ul>
+					</div>
+				</div> 
+				<div class="scrollbox">
+					<div class="pic-list">
+						<ul class="wrap">
+							<li class="picture"><img src="images/img/a.jpg" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/b.png" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/c.jpg" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/d.jpg" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/e.jpg" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/f.jpg" width="164" height="164" /></li>
+							<li class="picture"><img src="images/img/g.jpg" width="164" height="164" /></li>   
+							<li class="picture"><img src="images/img/h.jpg" width="164" height="164" /></li>  							
+						</ul>
+					</div>
+				</div> 
+			</p>
       </section>
     </div>
 

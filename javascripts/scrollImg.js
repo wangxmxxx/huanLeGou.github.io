@@ -29,8 +29,10 @@ ScrollImg.prototype = {
 			{
 				for(var i=0; i<This.aLi.length; i++)
 				{
+					// setStyle(指定第几张图片,声明是透明还是不透明（此处为不透明度）,不透明度为0.65（言外之意就是透明度为（0.35）);
 					setStyle(This.aLi[i],'opacity',0.65);
 				}
+				// 不透明度和透明度都是在0~1之间，不透明度 = 1 时 为完全不透明  = 0 时 为完全透明   ，透明度 则是相反  =1 全透明  =0 不透明
 				setStyle(this,'opacity',1);
 			}
 			this.aLi[i].onmouseout = function()
@@ -47,7 +49,7 @@ ScrollImg.prototype = {
 	{
 		this.startScroll(obj);			
 	},
-	startScroll : function(obj)
+		startScroll : function(obj)
 	{
 		var This=this;
 		this.timer=setInterval(function(){
@@ -56,7 +58,7 @@ ScrollImg.prototype = {
 				This.oUl.appendChild(This.aLi[0]);
 				This.oUl.style.left='0px';
 			});
-		}, 3000);
+		}, 1500);
 	},
 	stopScroll : function()
 	{
@@ -68,7 +70,6 @@ ScrollImg.prototype = {
 		var This=this;
 		obj.onmouseover = function()
 		{
-			
 			This.stopScroll();
 		}
 		
